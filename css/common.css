@@ -1,0 +1,107 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins, "NanumSquare";
+}
+
+html,
+body {
+  margin: 0;
+}
+.center {
+  margin: 0 auto;
+}
+.w_1200 {
+  width: 1200px;
+}
+.w_1000 {
+  width: 1000px;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.orange {
+  color: #de2a00 !important;
+}
+h1,
+h2 {
+  font-weight: 700 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.btn_square {
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+
+  border-radius: 5px;
+}
+.btn_square.black {
+  color: #1e1e1e;
+  font-size: 14px;
+  border: 1px solid #eee;
+  padding: 10px 20px;
+
+  border-radius: 5px;
+}
+.btn_square:hover {
+  background: #ff8400;
+  color: #fff;
+}
+.btn_more {
+  display: inline-block;
+  padding: 16px 32px 16px 32px;
+  margin-top: 30px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+.btn_more:hover {
+  background: #ff8400;
+}
+/* font */
+
+main .title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.8px;
+}
+
+main .list_title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .text {
+  font-size: 17px;
+  color: #4a4a4a;
+  letter-spacing: 0.5px;
+}
