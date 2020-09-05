@@ -1,4 +1,8 @@
 @import url("common.css");
+.h_container {
+  position: static !important;
+}
+
 .main_banner {
   width: 100%;
   height: 82vh;
@@ -39,11 +43,14 @@
 }
 
 .solution_list {
-  width: 80%;
+  width: 1240px;
+}
+
+.solution_list .item_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: space-around;
+  justify-items: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -53,7 +60,7 @@
 
 .solution_list li {
   width: 372px;
-  height: 545px;
+  height: 500px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
   margin-right: 60px;
@@ -79,8 +86,8 @@
   display: inline-block;
   margin-top: 30px;
   padding: 10px 25px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .solution_list li:nth-of-type(3n) {

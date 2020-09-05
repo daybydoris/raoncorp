@@ -3,6 +3,10 @@ body {
   position: relative;
 }
 
+.h_container .logo.default {
+  display: none;
+}
+
 .section_inner {
   position: relative;
   height: 1000px;
@@ -49,7 +53,7 @@ body {
 }
 
 .rectangle:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1200px;
   top: 284px;
@@ -234,8 +238,8 @@ body {
   display: inline-block;
   margin-top: 30px;
   padding: 10px 25px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .solution_list li:nth-of-type(3n) {
