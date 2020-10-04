@@ -1,0 +1,180 @@
+@import url("common.css");
+
+.main_banner {
+  width: 100%;
+  height: 82vh;
+
+  background: url("/img/cs_visual.png") no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  text-align: center;
+
+  .banner_wrap {
+    width: 100%;
+    height: 82vh;
+    h2 {
+      color: #fff;
+      font-family: NanumSquare_acEB;
+      font-size: 80px;
+
+      position: absolute;
+      left: 50%;
+      top: 55%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.cs_wrap {
+  text-align: center;
+  margin: 150px auto;
+  width: 100%;
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .cs_category {
+    .btn_more {
+      font-size: 20px;
+      color: #414141;
+      font-weight: 900;
+      border: 1px solid #d2d2d2;
+      padding: 20px 50px;
+      margin-right: 40px;
+    }
+    .btn_more:nth-of-type(4) {
+      margin-right: 0;
+    }
+    .btn_more.active,
+    .btn_more:hover {
+      background: #ff8400;
+      color: #fff;
+      border: 1px solid #ff8400;
+    }
+  }
+}
+
+.download {
+  width: 100%;
+  background: #f8f8f8;
+  margin: 50px auto;
+  padding: 50px 0;
+
+  .down_top {
+    margin-bottom: 20px;
+    p {
+      font-size: 20px;
+      color: #414141;
+      font-weight: normal;
+      display: inline-block;
+    }
+    .setup_ck {
+      color: #ff8400;
+      font-size: 18px;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
+  .down_btn {
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .btn_square {
+      display: inline-block;
+      font-size: 20px;
+      padding: 20px 40px;
+
+      span {
+        width: 21px;
+        height: 23px;
+        background: url("/img/cs_icon_down.png") no-repeat;
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    .setup_file {
+      .setup_btn {
+        .btn_square {
+          background: #343434;
+          margin-left: 10px;
+          color: #fff;
+        }
+        .btn_square:hover {
+          background: #414141;
+        }
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+    .delete_file {
+      .delete_btn {
+        .btn_square {
+          background: #ff8400;
+          color: #fff;
+        }
+        .btn_square:hover {
+          background: #ff9019;
+        }
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.cs_faq {
+  width: 1230px;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 40px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .faq_list_wrap {
+    width: 90%;
+    margin: 50px auto;
+
+    .faq_list {
+      width: 100%;
+
+      .faq_list_item {
+        text-align: left;
+        margin: 10px;
+
+        h4 {
+          font-size: 18px;
+          border-bottom: 1px solid #ccc;
+          padding: 30px;
+        }
+        h4:after {
+          content: "";
+          width: 32px;
+          height: 17px;
+          background: url("/img/cs_icon_arrow.png") no-repeat;
+          display: inline-block;
+          float: right;
+
+          clear: both;
+        }
+
+        .faq_content {
+          padding: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+@import url("common.css");
+.main_banner {
+  width: 100%;
+  height: 82vh;
+  background: url("/img/buisness_visual.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.main_banner .banner_wrap {
+  width: 100%;
+  height: 82vh;
+}
+
+.main_banner .banner_wrap h2 {
+  color: #fff;
+  font-family: NanumSquare_acEB;
+  font-size: 80px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section_feature .txt_area {
+  width: 1230px;
+  padding: 70px 350px;
+  background: #f8f8f8;
+  margin-bottom: 150px;
+  font-size: 20px;
+}
+
+.section_feature .txt_area p {
+  line-height: 1.8;
+}
+
+.form_wrap {
+  width: 1230px;
+}
+
+.form_wrap .privacyCheck_wrap {
+  text-align: left;
+}
+
+.form_wrap .privacyCheck_wrap h4 {
+  font-size: 30px;
+}
+
+.form_wrap .privacyCheck_wrap .checkWrap {
+  margin-top: 10px;
+}
+
+.privacyTxt {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.privacyTxt .txtWrap {
+  padding: 30px;
+}
+
+.privacyTxt .txtWrap dt {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.privacyTxt .txtWrap .privacy_table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 1px solid #707070;
+  width: 100%;
+}
+
+.privacyTxt .txtWrap .privacy_table th {
+  background: #707070;
+  padding: 10px;
+}
+
+.privacyTxt .txtWrap .privacy_table td {
+  padding: 10px;
+}
+
+.contactBoard {
+  margin: 100px auto;
+}
+
+.contactBoard p {
+  text-align: right;
+  font-size: 16px;
+  color: #585858;
+  border-bottom: 1px solid #585858;
+  padding: 10px;
+}
+
+.contactBoard .btn_square {
+  padding: 20px 50px;
+  font-size: 20px;
+}
+
+#formBoard .boardWrite {
+  width: 90%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+#formBoard .boardWrite tr {
+  padding: 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#formBoard .boardWrite tr th {
+  width: 180px;
+  text-align: left;
+}
+
+#formBoard .boardWrite tr td {
+  text-align: left;
+}
+
+#formBoard .boardWrite tr td select,
+#formBoard .boardWrite tr td input,
+#formBoard .boardWrite tr td textarea {
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+}
+
+#formBoard .boardWrite tr td select,
+#formBoard .boardWrite tr td input {
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+}
+
+#formBoard .boardWrite tr td textarea {
+  width: 700px;
+  height: 400px;
+  padding: 10px;
+  resize: vertical;
+}
+
+#formBoard .boardWrite tr:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  display: block;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=business.css.map */

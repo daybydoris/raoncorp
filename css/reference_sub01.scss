@@ -1,0 +1,165 @@
+@import url("common.css");
+
+.main_banner {
+  width: 100%;
+  height: 82vh;
+
+  background: url("/img/refer_sub01_visual.jpg") no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  text-align: center;
+
+  .banner_wrap {
+    width: 100%;
+    height: 82vh;
+    h2 {
+      color: #fff;
+      font-family: NanumSquare_acEB;
+      font-size: 80px;
+
+      position: absolute;
+      left: 50%;
+      top: 55%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+  .btn_square {
+    padding: 15px 40px;
+
+    font-size: 15px;
+
+    position: absolute;
+    left: 50%;
+    top: 60%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.section_feature {
+  .txt_area {
+    margin-bottom: 100px;
+    h4 {
+      font-size: 20px;
+      color: #ff8400;
+    }
+    .title {
+      font-size: 45px;
+      margin: 25px 0;
+    }
+    p {
+      font-size: 16px;
+      color: #737373;
+    }
+  }
+  .feature_item {
+    article {
+      width: 1230px;
+    }
+    .desc {
+      width: 1230px;
+      background: #1b1b1b;
+      color: #c8c8c8;
+      border-radius: 20px;
+
+      padding: 90px;
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.scenario {
+  .scenario_desc {
+    h3 {
+      text-transform: uppercase;
+      font-size: 45px;
+    }
+    p {
+      font-size: 16px;
+      width: 675px;
+      text-align: left;
+      color: #858585;
+      line-height: 1.5;
+    }
+  }
+  img {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+.require {
+  margin: 400px auto;
+  h3 {
+    margin-bottom: 60px;
+    font-size: 45px;
+  }
+}
+.req_wrap {
+  padding: 90px;
+
+  background: #1b1b1b;
+  border-radius: 20px;
+  .req_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .req_item {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        max-width: 70px;
+        margin-bottom: 30px;
+      }
+      p {
+        color: #c8c8c8;
+      }
+    }
+  }
+}
+
+.special {
+  margin: 400px auto;
+  .special_desc {
+    h3 {
+      font-size: 45px;
+      margin-bottom: 60px;
+    }
+    > p {
+      width: 960px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        width: 150px;
+        height: 150px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+          max-width: 90px;
+          max-height: 90px;
+          margin-bottom: 30px;
+        }
+        p {
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

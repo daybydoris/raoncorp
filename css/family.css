@@ -1,0 +1,139 @@
+@import url("common.css");
+.main_banner {
+  width: 100%;
+  height: 82vh;
+  background: url("/img/family_visual.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.main_banner .banner_wrap {
+  width: 100%;
+  height: 82vh;
+}
+
+.main_banner .banner_wrap h1 {
+  color: #fff;
+  font-family: NanumSquare_acEB;
+  font-size: 80px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section_family {
+  text-align: center;
+  margin: 200px auto;
+  width: 1230px;
+}
+
+.section_family h2 {
+  font-size: 45px;
+  margin-bottom: 100px;
+}
+
+.section_family .family_banner_wrap {
+  width: 100%;
+  margin: 60px auto 150px auto;
+  text-align: left;
+}
+
+.section_family .family_banner_wrap .family_banner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section_family .family_banner_wrap .family_banner .family_item {
+  width: 550px;
+  height: 300px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.section_family .family_banner_wrap .family_banner .family_item img {
+  width: 100%;
+  height: auto;
+}
+
+.section_family .family_banner_wrap .family_banner .family_item .item_desc {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  color: #fff;
+  white-space: pre-line;
+}
+
+.section_family .family_banner_wrap .family_banner .family_item .item_desc h3 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.section_family .family_banner_wrap .family_banner .family_item .item_desc p {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.section_family .ptn_banner_wrap {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.section_family .ptn_banner_wrap h2 {
+  margin-bottom: 100px;
+}
+
+.section_family .ptn_banner_wrap .partner_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #ececec;
+}
+
+.section_family .ptn_banner_wrap .partner_banner .partner_item {
+  width: 25%;
+  padding: 30px 0;
+}
+
+.section_family .ptn_banner_wrap .partner_banner .partner_item img {
+  width: 100%;
+}
+
+.section_family .ptn_banner_wrap .partner_banner .partner_item:nth-of-type(1),
+.section_family .ptn_banner_wrap .partner_banner .partner_item:nth-of-type(2),
+.section_family .ptn_banner_wrap .partner_banner .partner_item:nth-of-type(3) {
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+.section_family .ptn_banner_wrap .partner_banner .partner_item:nth-of-type(4) {
+  border-bottom: 1px solid #ececec;
+}
+
+.section_family .ptn_banner_wrap .partner_banner .partner_item:nth-of-type(5),
+.section_family .ptn_banner_wrap .partner_banner .partner_item:nth-of-type(6),
+.section_family .ptn_banner_wrap .partner_banner .partner_item:nth-of-type(7) {
+  border-right: 1px solid #ececec;
+}
+/*# sourceMappingURL=family.css.map */

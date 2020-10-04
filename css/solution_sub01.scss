@@ -2,9 +2,6 @@
 body {
   position: relative;
 }
-.h_container .logo.default {
-  display: none;
-}
 .section_inner {
   position: relative;
 
@@ -266,6 +263,9 @@ body {
 .section_example {
   text-align: center;
   padding: 150px;
+  .title {
+    margin-bottom: 90px;
+  }
   .ex_list {
     ul {
       display: flex;
@@ -283,6 +283,18 @@ body {
       background-color: #ffffff;
 
       text-align: left;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .btn_square.orng {
+      width: 120px;
+      transition: 0.3s;
+      display: inline-block;
+
+      text-align: center;
     }
   }
 }

@@ -62,8 +62,14 @@ a {
   padding: 10px 20px;
 
   border-radius: 5px;
+
+  transition: 0.3s;
 }
-.btn_square.black {
+.btn_square:hover {
+  background: #fff;
+  color: #1e1e1e;
+}
+.btn_square.white {
   color: #1e1e1e;
   font-size: 14px;
   border: 1px solid #eee;
@@ -71,10 +77,21 @@ a {
 
   border-radius: 5px;
 }
-.btn_square:hover {
+.btn_square.white:hover {
+  color: #fff;
+  background: #ff8400;
+  border: 1px solid #ff8400;
+}
+.btn_square.orng {
   background: #ff8400;
   color: #fff;
 }
+.btn_square.orng:hover {
+  background: #fff;
+  color: #1e1e1e;
+  border: 1px solid #eee;
+}
+
 .btn_more {
   display: inline-block;
   padding: 16px 32px 16px 32px;

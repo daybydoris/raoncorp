@@ -3,10 +3,6 @@ body {
   position: relative;
 }
 
-.h_container .logo.default {
-  display: none;
-}
-
 .section_inner {
   position: relative;
   height: 1000px;
@@ -314,6 +310,10 @@ body {
   padding: 150px;
 }
 
+.section_example .title {
+  margin-bottom: 90px;
+}
+
 .section_example .ex_list ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,5 +335,25 @@ body {
   border: solid 0.6px #eeeeee;
   background-color: #ffffff;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section_example .ex_list .btn_square.orng {
+  width: 120px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
 }
 /*# sourceMappingURL=solution_sub01.css.map */
