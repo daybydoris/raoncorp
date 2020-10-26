@@ -4,13 +4,13 @@ $(function () {
   //    console.log(location.pathname);
   //    console.log(location.host);
 
-  $("header").load("/inc_head_foot.html header .h_container", headColor);
-  $("footer").load("/inc_head_foot.html footer .f_container");
+  $("header").load("/raoncorp/inc_head_foot.html header .h_container", headColor);
+  $("footer").load("/raoncorp/inc_head_foot.html footer .f_container");
 
   var filename = location.pathname;
 
   function headColor() {
-    if (filename == "/index.html") {
+    if (filename == "/raoncorp/index.html") {
       $(".h_container").addClass("dark");
       $(".contact").addClass("default");
     } else {
