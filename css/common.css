@@ -1,4 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+/*   font-family:'Montserrat'  ;*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+
+/*   font-family:'Poppins'  ;*/
+
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+/*   font-family:'NanumSquare_acL'  ;*/
 
 * {
   box-sizing: border-box;
