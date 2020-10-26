@@ -2,7 +2,7 @@
 .main_banner {
   width: 100%;
   height: 82vh;
-  background: url("/img/refer_sub01_visual.jpg") no-repeat;
+  background: url("../img/refer_sub01_visual.jpg") no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
