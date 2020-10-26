@@ -643,4 +643,11 @@ footer {
 
 .f_container .copyright {
   margin-top: 18px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f_container .copyright a{
+  text-transform: uppercase;
+  font-weight:bold;
 }

@@ -5,7 +5,7 @@ $(function () {
   //    console.log(location.host);
 
   $("header").load("/raoncorp/inc_head_foot.html header .h_container", headColor);
-  $("footer").load("/raoncorp/inc_head_foot.html footer .f_container");
+  $("footer").load("/raoncorp/inc_head_foot.html footer .f_container", scrollTop);
 
   var filename = location.pathname;
 
@@ -18,6 +18,20 @@ $(function () {
       $(".contact").addClass("white");
     }
   }
+
+  function scrollTop(){
+    setTimeout(function(){
+        var topButton = document.querySelector('.copyright a');
+
+        topButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+            });
+        });
+    },500);
+}
 
   //  function menuTrigger(){
   //      // menu-trigger active 클래스 추가
