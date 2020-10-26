@@ -10,7 +10,7 @@ $(function () {
   var filename = location.pathname;
 
   function headColor() {
-    if (filename == "/raoncorp/index.html") {
+    if (filename == "/raoncorp/index.html" || filename == "/raoncorp/") {
       $(".h_container").addClass("dark");
       $(".contact").addClass("default");
     } else {
