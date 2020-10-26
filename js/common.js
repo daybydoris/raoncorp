@@ -7,7 +7,6 @@ $(function () {
   $("header").load("/raoncorp/inc_head_foot.html header .h_container", headColor);
   $("footer").load("/raoncorp/inc_head_foot.html footer .f_container");
 
-  console.log(location.pathname);
   var filename = location.pathname;
 
   function headColor() {

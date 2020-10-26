@@ -2,7 +2,7 @@
 .main_banner {
   width: 100%;
   height: 82vh;
-  background: url("/img/cs_visual.png") no-repeat;
+  background: url("../img/cs_visual.png") no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
@@ -26,7 +26,7 @@
 
 .cs_wrap {
   text-align: center;
-  margin: 150px auto;
+  margin: 150px auto 0 auto;
   width: 100%;
 }
 
@@ -36,9 +36,9 @@
 }
 
 .cs_wrap .cs_category .btn_more {
-  font-size: 20px;
+  font-size: 18px;
   color: #414141;
-  font-weight: 900;
+  font-weight: 600;
   border: 1px solid #d2d2d2;
   padding: 20px 50px;
   margin-right: 40px;
@@ -60,6 +60,7 @@
   background: #f8f8f8;
   margin: 50px auto;
   padding: 50px 0;
+  display: none;
 }
 
 .download .down_top {
@@ -96,7 +97,7 @@
 
 .download .down_btn .btn_square {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px 40px;
 }
 
@@ -135,9 +136,14 @@
   margin-top: 20px;
 }
 
+.download.active {
+  display: block;
+}
+
 .cs_faq {
   width: 1230px;
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
+  display: none;
 }
 
 .cs_faq h3 {
@@ -161,23 +167,197 @@
   margin: 10px;
 }
 
-.cs_faq .faq_list_wrap .faq_list .faq_list_item h4 {
-  font-size: 18px;
+.cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #ccc;
   padding: 30px;
 }
 
-.cs_faq .faq_list_wrap .faq_list .faq_list_item h4:after {
-  content: "";
+.cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_title h4 {
+  font-size: 18px;
+}
+
+.cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_title .faq_btn {
+  width: 40px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_title .faq_btn img {
   width: 32px;
   height: 17px;
-  background: url("/img/cs_icon_arrow.png") no-repeat;
-  display: inline-block;
-  float: right;
-  clear: both;
+}
+
+.cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_title .faq_btn.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_content {
   padding: 50px;
+  display: none;
+}
+
+.cs_faq.active {
+  display: block;
+}
+
+.section_feature {
+  padding: 50px 20px;
+}
+
+.section_feature .txt_area {
+  width: 1230px;
+  padding: 70px 350px;
+  background: #f8f8f8;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+.section_feature .txt_area p {
+  line-height: 1.8;
+}
+
+.form_wrap {
+  width: 1230px;
+}
+
+.form_wrap .privacyCheck_wrap {
+  text-align: left;
+}
+
+.form_wrap .privacyCheck_wrap h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form_wrap .privacyCheck_wrap .checkWrap {
+  margin-top: 10px;
+}
+
+.privacyTxt {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.privacyTxt .txtWrap {
+  padding: 30px;
+}
+
+.privacyTxt .txtWrap dt {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.privacyTxt .txtWrap .privacy_table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 1px solid #707070;
+  width: 100%;
+}
+
+.privacyTxt .txtWrap .privacy_table th {
+  background: #707070;
+  padding: 10px;
+}
+
+.privacyTxt .txtWrap .privacy_table td {
+  padding: 10px;
+}
+
+.contactBoard {
+  margin: 100px auto 0 auto;
+}
+
+.contactBoard p {
+  text-align: right;
+  font-size: 16px;
+  color: #585858;
+  border-bottom: 1px solid #585858;
+  padding: 10px;
+}
+
+.contactBoard .btn_square {
+  padding: 20px 50px;
+  font-size: 20px;
+}
+
+#formBoard .boardWrite {
+  width: 90%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+#formBoard .boardWrite tr {
+  padding: 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#formBoard .boardWrite tr th {
+  width: 180px;
+  text-align: left;
+}
+
+#formBoard .boardWrite tr td {
+  text-align: left;
+}
+
+#formBoard .boardWrite tr td select,
+#formBoard .boardWrite tr td input,
+#formBoard .boardWrite tr td textarea {
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+}
+
+#formBoard .boardWrite tr td select,
+#formBoard .boardWrite tr td input {
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+}
+
+#formBoard .boardWrite tr td textarea {
+  width: 700px;
+  height: 400px;
+  padding: 10px;
+  resize: vertical;
+}
+
+#formBoard .boardWrite tr:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  display: block;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=customer.css.map */
