@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/css/customer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/customer.css" />
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="../js/common.js"></script>
 
     <title>라온시큐어</title>
   </head>
@@ -30,12 +30,12 @@
         <div class="cs_wrap">
           <h2>장애문의</h2>
           <div class="cs_category">
-            <a href="#" class="btn_more active">TouchEn Key</a>
-            <a href="#" class="btn_more">TouchEn nxKey</a>
-            <a href="#" class="btn_more">Key# biz / CertRelay</a>
-            <a href="#" class="btn_more">1:1 문의</a>
+            <a href="#" class="btn_more active" id="touchEnKey">TouchEn Key</a>
+            <a href="#" class="btn_more" id="touchEnNxKey">TouchEn nxKey</a>
+            <a href="#" class="btn_more" id="keyBiz">Key# biz / CertRelay</a>
+            <a href="#" class="btn_more" id="inquiry">1:1 문의</a>
           </div>
-          <div class="download">
+          <div class="download active">
             <div class="down_top">
               <p>문제 해결을 위해 아래의 최신 버전 설치 파일 / 삭제 파일을 설치해주세요</p>
               <a href="#" class="setup_ck">설치 확인</a>
@@ -59,20 +59,35 @@
             </div>
           </div>
 
-          <div class="cs_faq">
-            <h3>FAQ</h3>
+          <div class="cs_faq active" id="touchEnKey">
+            <h3>FAQ - touchEnKey</h3>
             <div class="faq_list_wrap">
               <ul class="faq_list">
                 <li class="faq_list_item">
-                  <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                  <div class="faq_title">
+                    <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                    <span class="faq_btn">
+                      <img src="../img/cs_icon_arrow.png" alt="">
+                    </span>
+                  </div>
                   <div class="faq_content">FAQ 내용</div>
                 </li>
                 <li class="faq_list_item">
-                  <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                  <div class="faq_title">
+                    <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                    <span class="faq_btn">
+                      <img src="../img/cs_icon_arrow.png" alt="">
+                    </span>
+                  </div>
                   <div class="faq_content">FAQ 내용</div>
                 </li>
                 <li class="faq_list_item">
-                  <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                  <div class="faq_title">
+                    <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                    <span class="faq_btn">
+                      <img src="../img/cs_icon_arrow.png" alt="">
+                    </span>
+                  </div>
                   <div class="faq_content">FAQ 내용</div>
                 </li>
               </ul>
@@ -80,12 +95,281 @@
           </div>
         </div>
 
+        <div class="cs_faq" id="touchEnNxKey">
+          <h3>FAQ - touchEnNxKey</h3>
+          <div class="faq_list_wrap">
+            <ul class="faq_list">
+              <li class="faq_list_item">
+                <div class="faq_title">
+                  <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                  <span class="faq_btn">
+                    <img src="../img/cs_icon_arrow.png" alt="">
+                  </span>
+                </div>
+                <div class="faq_content">FAQ 내용</div>
+              </li>
+              <li class="faq_list_item">
+                <div class="faq_title">
+                  <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                  <span class="faq_btn">
+                    <img src="../img/cs_icon_arrow.png" alt="">
+                  </span>
+                </div>
+                <div class="faq_content">FAQ 내용</div>
+              </li>
+              <li class="faq_list_item">
+                <div class="faq_title">
+                  <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                  <span class="faq_btn">
+                    <img src="../img/cs_icon_arrow.png" alt="">
+                  </span>
+                </div>
+                <div class="faq_content">FAQ 내용</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs_faq" id="keyBiz">
+        <h3>FAQ - keyBiz</h3>
+        <div class="faq_list_wrap">
+          <ul class="faq_list">
+            <li class="faq_list_item">
+              <div class="faq_title">
+                <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                <span class="faq_btn">
+                  <img src="../img/cs_icon_arrow.png" alt="">
+                </span>
+              </div>
+              <div class="faq_content">FAQ 내용</div>
+            </li>
+            <li class="faq_list_item">
+              <div class="faq_title">
+                <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                <span class="faq_btn">
+                  <img src="../img/cs_icon_arrow.png" alt="">
+                </span>
+              </div>
+              <div class="faq_content">FAQ 내용</div>
+            </li>
+            <li class="faq_list_item">
+              <div class="faq_title">
+                <h4>[메시지] 설치파일이 손상되거나 존재하지 않습니다.</h4>
+                <span class="faq_btn">
+                  <img src="../img/cs_icon_arrow.png" alt="">
+                </span>
+              </div>
+              <div class="faq_content">FAQ 내용</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs_faq section_feature" id="inquiry">
+      <div class="txt_area">
+        <p>
+          제품 가격이나 도입에 관련해 궁금하신 점을 아래에 작성해주시면<br />
+          최대한 빠른 시간 내 담당자가 연락 드리도록 하겠습니다.
+        </p>
+      </div>
+      <div class="form_wrap">
+        <div class="privacyCheck_wrap">
+          <h4>개인정보 수집 및 이용 동의</h4>
+          <div class="privacyTxt">
+            <div class="txtWrap">
+              <dl>
+                <dt>[필수] 고객문의 기본기능 제공</dt>
+                <table class="privacy_table">
+                  <colgroup>
+                    <col width="33.3%" />
+                    <col width="*" />
+                    <col width="33.3%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>목적</th>
+                      <th>항목</th>
+                      <th>보유기간</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        고객 문의(제품/컨설팅/장애) 응대 등<br />제반 업무
+                        목적
+                      </td>
+                      <td>[필수항목]회사명, 이름, 이메일, 연락처</td>
+                      <td>홈페이지 문의(제품/컨설팅/장애): 3년</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dl>
+            </div>
+          </div>
+          <div class="checkWrap">
+            <span class="checkbox">
+              <label for="privacyTxt_ck"
+                >고객문의 제공을 위해 필요한 최소한의 개인정보이므로 동의를
+                해주셔야 이용이 가능합니다.</label
+              >
+            </span>
+          </div>
+          <div class="checkWrap">
+            <input
+              type="checkbox"
+              id="privacyTxt_ck"
+              name="privacyTxt_ck"
+            />
+            <label for="privacyTxt_ck"
+              >개인정보 수집 및 이용에 대해 동의합니다.</label
+            >
+          </div>
+        </div>
+        <div class="contactBoard">
+          <p>* 표시는 필수입력 항목 입니다.</p>
+          <form id="formBoard">
+            <table class="boardWrite">
+              <colgroup>
+                <col width="215px" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>
+                    제품명
+                    <span>*</span>
+                  </th>
+                  <td>
+                    <select name="data[product]" id="data_product">
+                      <option value>전체</option>
+                      <option value="FIDO 생체 인증 플랫폼, OnePass">
+                        FIDO 생체 인증 플랫폼, OnePass
+                      </option>
+                      <option value="스마트워크 보안 플랫폼, OneGuard">
+                        스마트워크 보안 플랫폼, OneGuard
+                      </option>
+                      <option value="TouchEn mGuard">
+                        TouchEn mGuard
+                      </option>
+                      <option value="TouchEn Key">
+                        TouchEn Key
+                      </option>
+                      <option value="TouchEn nxKey">
+                        TouchEn nxKey
+                      </option>
+                      <option value="key#biz / CertRelay">key#biz / CertRelay</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    회사명
+                    <span>*</span>
+                  </th>
+                  <td>
+                    <input
+                      type="text"
+                      name="data[company]"
+                      id="data_company"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    산업
+                    <span>*</span>
+                  </th>
+                  <td>
+                    <input
+                      type="text"
+                      name="data[industry]"
+                      id="data_industry"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    이름
+                    <span>*</span>
+                  </th>
+                  <td>
+                    <input type="text" name="data[name]" id="data_name" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>직급</th>
+                  <td>
+                    <input type="text" name="data[rank]" id="data_rank" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>부서/팀명</th>
+                  <td>
+                    <input
+                      type="text"
+                      name="data[depart]"
+                      id="data_depart"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    이메일
+                    <span>*</span>
+                  </th>
+                  <td>
+                    <input
+                      type="email"
+                      name="data[email]"
+                      id="data_email"
+                      placeholder="ex) raonsecure@raon.com"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    연락처
+                    <span>*</span>
+                  </th>
+                  <td>
+                    <input
+                      type="tel"
+                      name="data[phone]"
+                      id="data_phone"
+                      placeholder="ex) 01012345678"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="contactTxt">
+                    문의내용
+                    <span>*</span>
+                  </th>
+                  <td>
+                    <textarea
+                      name="data[content]"
+                      id="data_content"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+          <a href="" class="btn_square orng">문의 신청하기</a>
+        </div>
+      </div>
+    </div>
+
         <div class="section_business">
           <div class="bg_area"></div>
           <div class="txt_area">
             <h2 class="title">With Raon</h2>
             <p class="desc">라온이 제안하는 보안 솔루션을 통해 비즈니스의 새로운 성장과 발전을 경험하세요.</p>
-            <a href="#" class="btn_more">자세히 보기</a>
+            <a href="business.html" class="btn_more">자세히 보기</a>
           </div>
         </div>
       </div>
@@ -94,6 +378,7 @@
     <!---------------  footer  --------------->
     <footer></footer>
 
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/customer.js"></script>
   </body>
 </html>
