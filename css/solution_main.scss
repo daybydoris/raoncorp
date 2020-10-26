@@ -44,12 +44,16 @@
     }
 }
 .solution_list{
-    width:80%;
+    width:1240px;
 
     display: flex;
-    justify-items:space-around;
+    justify-items:space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    margin:0 auto;
+
+    text-align:left;
 
     li{
         width:372px;
