@@ -26,12 +26,25 @@ $(function () {
         topButton.addEventListener("click", function (e) {
             e.preventDefault();
             window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+              top: 0,
+              behavior: "smooth"
             });
+            $(".h_container").slideDown();
         });
     },500);
 }
+
+  //header 스크롤 시 숨기기
+  $(window).on("mousewheel", function (e) {
+    var wheel = e.originalEvent.wheelDelta;
+
+    if (wheel < 0) {
+      $(".h_container").slideUp();
+    } else {
+      $(".h_container").slideDown();
+    }
+  });
+
 
   //  function menuTrigger(){
   //      // menu-trigger active 클래스 추가
