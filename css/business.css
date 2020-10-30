@@ -28,7 +28,7 @@
   width: 1230px;
   padding: 70px 350px;
   background: #f8f8f8;
-  margin-bottom: 150px;
+  margin: 150px auto;
   font-size: 20px;
 }
 
@@ -38,6 +38,7 @@
 
 .form_wrap {
   width: 1230px;
+  margin: 0 auto;
 }
 
 .form_wrap .privacyCheck_wrap {
@@ -98,9 +99,14 @@
   padding: 10px;
 }
 
+.contactBoard .btn_wrap {
+  text-align: center;
+}
+
 .contactBoard .btn_square {
   padding: 20px 50px;
   font-size: 20px;
+  display: inline-block;
 }
 
 #formBoard .boardWrite {

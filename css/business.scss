@@ -29,11 +29,12 @@
 }
 
 .section_feature {
+
   .txt_area {
     width: 1230px;
     padding: 70px 350px;
     background: #f8f8f8;
-    margin-bottom: 150px;
+    margin: 150px auto;
     font-size: 20px;
 
     p {
@@ -43,6 +44,8 @@
 }
 .form_wrap {
   width: 1230px;
+  margin:0 auto;
+
   .privacyCheck_wrap {
     text-align: left;
     h4 {
@@ -94,10 +97,15 @@
     border-bottom: 1px solid #585858;
     padding: 10px;
   }
-  .btn_square {
-    padding: 20px 50px;
-    font-size: 20px;
+  .btn_wrap{
+    text-align:center;
   }
+    .btn_square {
+      padding: 20px 50px;
+      font-size: 20px;
+      display: inline-block;
+    }
+
 }
 
 #formBoard {

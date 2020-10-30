@@ -34,8 +34,13 @@
           transform: translate(-50%, -50%);
 }
 
+.section_feature {
+  margin: 150px 0;
+}
+
 .section_feature .txt_area {
-  margin-bottom: 100px;
+  margin: 0 auto 100px auto;
+  text-align: center;
 }
 
 .section_feature .txt_area h4 {
@@ -64,6 +69,11 @@
           box-shadow: 0 0 8.1px 0.9px rgba(0, 0, 0, 0.09);
   border: solid 1px #e5e5e5;
   padding: 90px;
+}
+
+.background,
+.result {
+  margin: 0 auto;
 }
 
 .background .bg_desc,

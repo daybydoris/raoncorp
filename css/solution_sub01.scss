@@ -145,7 +145,9 @@ body {
 .section_feature {
   background: #f8f8f8;
   padding: 100px;
+  margin:0 auto;
   .txt_area {
+    text-align:center;
     .title {
       font-size: 40px;
       margin-bottom: 100px;
@@ -157,6 +159,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin:0 auto;
       li {
         width: 275px;
         text-align: center;

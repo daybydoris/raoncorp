@@ -34,8 +34,13 @@
           transform: translate(-50%, -50%);
 }
 
+.section_feature {
+  margin: 150px 0;
+}
+
 .section_feature .txt_area {
-  margin-bottom: 100px;
+  margin: 0 auto 100px auto;
+  text-align: center;
 }
 
 .section_feature .txt_area h4 {
@@ -53,11 +58,16 @@
   color: #737373;
 }
 
+.section_feature .feature_item {
+  text-align: center;
+}
+
 .section_feature .feature_item article {
   width: 1230px;
 }
 
 .section_feature .feature_item .desc {
+  margin: 0 auto;
   width: 1230px;
   background: #1b1b1b;
   color: #c8c8c8;
@@ -67,6 +77,14 @@
 
 .section_feature .feature_item .desc p {
   text-align: left;
+}
+
+.scenario {
+  margin: 0 auto;
+}
+
+.scenario .scenario_desc {
+  margin: 0 auto;
 }
 
 .scenario .scenario_desc h3 {
@@ -150,6 +168,7 @@
 }
 
 .special .special_desc > p {
+  text-align: left;
   width: 960px;
   margin: 0 auto;
   margin-bottom: 60px;

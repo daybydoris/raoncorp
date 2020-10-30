@@ -160,6 +160,11 @@ body {
 .section_feature {
   background: #f8f8f8;
   padding: 100px;
+  margin: 0 auto;
+}
+
+.section_feature .txt_area {
+  text-align: center;
 }
 
 .section_feature .txt_area .title {
@@ -178,6 +183,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 
 .section_feature .feature_item ul li {

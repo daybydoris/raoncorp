@@ -34,6 +34,14 @@
           transform: translate(-50%, -50%);
 }
 
+.section_feature {
+  margin: 150px 0;
+}
+
+.section_feature .txt_area {
+  text-align: center;
+}
+
 .section_feature .txt_area .title {
   margin-bottom: 100px;
 }

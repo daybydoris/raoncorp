@@ -1,0 +1,168 @@
+@import url("common.css");
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8400), color-stop(#ff3621), to(#ff8400));
+  background: linear-gradient(#ff8400, #ff3621, #ff8400);
+}
+
+.m_container {
+  margin: 0 auto;
+  width: 1230px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.m_container .main_text h2 {
+  font-size: 55px;
+  padding: 0 10px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.m_container .main_text h2:nth-of-type(1) {
+  color: #ff8400;
+  width: 550px;
+  background: #fff;
+}
+
+.m_container .contents_wrap .tag .tag_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.m_container .contents_wrap .tag .tag_list .tag_item {
+  margin: 0 50px;
+}
+
+.m_container .contents_wrap .tag .tag_list .tag_item a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.m_container .contents_wrap .tag .tag_list .tag_item a:hover {
+  color: #ff3621;
+}
+
+.m_container .contents_wrap .contents .con_title {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.m_container .contents_wrap .contents .con_subtitle {
+  font-size: 27px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.m_container .contents_wrap .contents .con_text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+}
+
+.m_container .contents_wrap .contents .img_box {
+  text-align: center;
+}
+
+.m_container .contents_wrap .contents .img_box img {
+  width: 830px;
+  margin: 40px 0;
+}
+
+.m_container .contents_wrap .contents table {
+  border-collapse: collapse;
+}
+
+.m_container .contents_wrap .contents article {
+  margin: 100px auto;
+  width: 100%;
+  padding: 60px 80px;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.m_container .contents_wrap .contents article#history .tab .tabBtn {
+  display: inline-block;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.m_container .contents_wrap .contents article#history .tab .tabBtn.active,
+.m_container .contents_wrap .contents article#history .tab .tabBtn:hover {
+  background: #ff3621;
+  border: 1px solid #ff3621;
+}
+
+.m_container .contents_wrap .contents article#history .now,
+.m_container .contents_wrap .contents article#history .then {
+  display: none;
+}
+
+.m_container .contents_wrap .contents article#history .now table,
+.m_container .contents_wrap .contents article#history .then table {
+  margin: 30px 0;
+}
+
+.m_container .contents_wrap .contents article#history .now table th,
+.m_container .contents_wrap .contents article#history .then table th {
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.m_container .contents_wrap .contents article#history .now table td,
+.m_container .contents_wrap .contents article#history .then table td {
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.m_container .contents_wrap .contents article#history .now.active,
+.m_container .contents_wrap .contents article#history .then.active {
+  display: block;
+}
+
+.m_container .contents_wrap .contents article#vision .img_box {
+  margin: 0 auto;
+}
+
+.m_container .contents_wrap .contents article#vision .mission {
+  margin: 0 auto;
+}
+
+.m_container .contents_wrap .contents article#vision .mission th {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.m_container .contents_wrap .contents article#vision .mission td {
+  padding: 10px;
+}
+
+.m_container .contents_wrap .contents article#map .img_box {
+  margin: 0 auto;
+}
+
+.m_container .contents_wrap .contents article#map .img_box img {
+  margin-bottom: 20px;
+}
+
+.m_container .contents_wrap .contents article#map .caption {
+  width: 830px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=raoninfo.css.map */

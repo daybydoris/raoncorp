@@ -40,8 +40,11 @@
 }
 
 .section_feature {
+  margin: 150px 0;
+
   .txt_area {
-    margin-bottom: 100px;
+    margin: 0 auto 100px auto;
+    text-align:center;
     h4 {
       font-size: 20px;
       color: #ff8400;
@@ -56,10 +59,12 @@
     }
   }
   .feature_item {
+    text-align:center;
     article {
       width: 1230px;
     }
     .desc {
+      margin:0 auto;
       width: 1230px;
       background: #1b1b1b;
       color: #c8c8c8;
@@ -74,7 +79,9 @@
 }
 
 .scenario {
+  margin:0 auto;
   .scenario_desc {
+    margin:0 auto;
     h3 {
       text-transform: uppercase;
       font-size: 45px;
@@ -133,6 +140,7 @@
       margin-bottom: 60px;
     }
     > p {
+      text-align:left;
       width: 960px;
       margin: 0 auto;
       margin-bottom: 60px;

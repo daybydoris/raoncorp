@@ -39,8 +39,10 @@
   }
 }
 .section_feature {
+  margin: 150px 0;
   .txt_area {
-    margin-bottom: 100px;
+    margin:0 auto 100px auto;
+    text-align:center;
     h4 {
       font-size: 20px;
       color: #ff8400;
@@ -71,6 +73,7 @@
 
 .background,
 .result {
+  margin:0 auto;
   .bg_desc,
   .result_desc {
     display: flex;
