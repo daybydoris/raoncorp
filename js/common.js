@@ -13,7 +13,11 @@ $(function () {
     if (filename == "/raoncorp/index.html" || filename == "/raoncorp/") {
       $(".h_container").addClass("dark");
       $(".contact").addClass("default");
-    } else {
+    }else if(filename == "/raoncorp/pages/raoninfo.html"){
+      
+      $('.h_container').addClass('default');
+      $(".contact").addClass("default");
+    }else {
       $(".h_container").addClass("white");
       $(".contact").addClass("white");
     }

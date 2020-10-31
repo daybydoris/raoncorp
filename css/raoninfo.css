@@ -2,12 +2,57 @@
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8400), color-stop(#ff3621), to(#ff8400));
   background: linear-gradient(#ff8400, #ff3621, #ff8400);
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+}
+
+main #shape01 {
+  position: absolute;
+  top: -1%;
+  left: 43%;
+  width: 90px;
+  height: 90px;
+  z-index: -10;
+  opacity: 0.3;
+}
+
+main #shape02 {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: -10;
+  opacity: 0.3;
+}
+
+main #shape03 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+  opacity: 1;
+  width: 432px;
+}
+
+main #shape04 {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  z-index: -10;
+  opacity: 1;
+  width: 563px;
 }
 
 .m_container {
-  margin: 0 auto;
+  margin: 250px auto 0 auto;
   width: 1230px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.m_container .main_text {
+  position: relative;
 }
 
 .m_container .main_text h2 {
@@ -15,12 +60,29 @@ body {
   padding: 0 10px;
   font-weight: 800;
   line-height: 1.2;
+  color: #fff;
 }
 
 .m_container .main_text h2:nth-of-type(1) {
   color: #ff8400;
-  width: 550px;
+}
+
+.m_container .main_text .text_bg {
+  width: 540px;
+  height: 67px;
   background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.m_container .contents_wrap {
+  margin: 100px auto;
+}
+
+.m_container .contents_wrap .tag {
+  height: 87px;
 }
 
 .m_container .contents_wrap .tag .tag_list {
@@ -33,12 +95,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
+  height: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .m_container .contents_wrap .tag .tag_list .tag_item {
   margin: 0 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .m_container .contents_wrap .tag .tag_list .tag_item a {
@@ -46,6 +122,7 @@ body {
   font-size: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  height: 100%;
 }
 
 .m_container .contents_wrap .tag .tag_list .tag_item a:hover {
@@ -77,6 +154,7 @@ body {
 .m_container .contents_wrap .contents .img_box img {
   width: 830px;
   margin: 40px 0;
+  border-radius: 30px;
 }
 
 .m_container .contents_wrap .contents table {
@@ -164,5 +242,9 @@ body {
 .m_container .contents_wrap .contents article#map .caption {
   width: 830px;
   margin: 0 auto;
+}
+
+.section_business {
+  background: none;
 }
 /*# sourceMappingURL=raoninfo.css.map */

@@ -10,10 +10,9 @@
 
 /*   font-family:'NanumSquare_acL'  ;*/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap");
 
 /*   font-family:'Noto Sans KR'  ;*/
-
 
 * {
   box-sizing: border-box;
@@ -51,6 +50,18 @@ header {
   width: 80%;
 }
 
+/* default */
+
+.h_container.default .logo.dark {
+  display: none;
+}
+.h_container.default .logo.white {
+  display: none;
+}
+.h_container.default .logo.default {
+  display: block;
+}
+
 /* dark */
 .h_container.dark .logo.dark {
   display: none;
@@ -86,6 +97,12 @@ header {
 .h_container.white .contact .btn_square.white {
   display: block;
 }
+.h_container.default .contact .btn_square.default {
+  display: block;
+}
+.h_container.default .contact .btn_square.white {
+  display: none;
+}
 
 /* search */
 .h_container.dark .search img.default {
@@ -99,6 +116,12 @@ header {
 }
 .h_container.white .search img.white {
   display: block;
+}
+.h_container.default .search img.default {
+  display: block;
+}
+.h_container.default .search img.white {
+  display: none;
 }
 
 /*--------- .h_container dark ----------*/
@@ -128,15 +151,20 @@ header {
 .h_container.white .menu_sub_section h3 {
   color: #000;
 }
-.h_container.white
-  nav
-  .menu_list
-  .item
-  .menu_sub_list
-  li
-  .menu_sub_section
-  > a {
+.h_container.white nav .menu_list .item .menu_sub_list li .menu_sub_section > a {
   color: rgba(0, 0, 0, 0.6);
+}
+
+/* ----- h_container default ----- */
+
+.h_container.default nav .menu_list .item .menu_sub_list {
+  background: #ff8400;
+}
+.h_container.default nav .menu_list .item > a {
+  color: #fff;
+}
+.h_container.default .menu_sub_section h3 {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /*nav*/
@@ -272,8 +300,8 @@ main {
 .m_container {
   width: 100%;
 }
-.section_feature{
-  margin:0 auto;
+.section_feature {
+  margin: 0 auto;
 }
 
 /*------------------ business ----------------*/
@@ -308,7 +336,6 @@ footer {
   color: #666;
 
   min-width: 1180px;
-  height: 230px;
 
   font-size: 14px;
 }
@@ -388,19 +415,14 @@ footer {
 
 .f_container .copyright {
   margin-top: 18px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.f_container .copyright a{
+.f_container .copyright a {
   text-transform: uppercase;
-  font-weight:bold;
+  font-weight: bold;
 }
-
-
-
-
-
 
 html,
 body {
