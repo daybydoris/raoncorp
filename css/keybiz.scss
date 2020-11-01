@@ -1,0 +1,84 @@
+.download {
+  width: 100%;
+  background: #f8f8f8;
+  margin: 50px auto;
+  padding: 50px 0;
+
+  .down_top {
+    margin-bottom: 20px;
+    p {
+      font-size: 20px;
+      color: #414141;
+      font-weight: normal;
+      display: inline-block;
+    }
+    .setup_ck {
+      color: #ff8400;
+      font-size: 18px;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
+  .down_btn {
+    min-width: 1160px;
+    height: 150px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    .btn_square {
+      display: inline-block;
+      font-size: 18px;
+      padding: 20px 40px;
+      background: #343434;
+      color: #fff;
+
+      span#icon {
+        width: 21px;
+        height: 23px;
+        background: url("../img/cs_icon_down.png") no-repeat;
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    .btn_square:hover {
+      background: #414141;
+    }
+
+    .slideDown {
+      span#icon {
+        background: url("../img/customer_circle_arrow_down_white.png") no-repeat;
+        background-position: bottom;
+        width: 21px;
+        height: 23px;
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .setup_file:nth-of-type(2),
+    .setup_file:nth-of-type(3) {
+      border-left: 1px solid #eee;
+      padding-left: 20px;
+      margin-left: 20px;
+    }
+
+    .browser {
+      border-left: 1px solid #eee;
+      padding-left: 20px;
+      margin-left: 20px;
+    }
+  }
+}

@@ -33,6 +33,7 @@
 .cs_wrap h2 {
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .cs_wrap .cs_category .btn_more {
@@ -55,95 +56,66 @@
   border: 1px solid #ff8400;
 }
 
-.download {
-  width: 100%;
-  background: #f8f8f8;
-  margin: 50px auto;
-  padding: 50px 0;
-  display: none;
-}
-
-.download .down_top {
-  margin-bottom: 20px;
-}
-
-.download .down_top p {
-  font-size: 20px;
-  color: #414141;
-  font-weight: normal;
-  display: inline-block;
-}
-
-.download .down_top .setup_ck {
-  color: #ff8400;
-  font-size: 18px;
-  text-decoration: underline;
-  text-underline-position: under;
-}
-
-.download .down_btn {
-  width: 700px;
-  height: 150px;
-  margin: 0 auto;
+.setup_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.download .down_btn .btn_square {
-  display: inline-block;
-  font-size: 18px;
-  padding: 20px 40px;
+.slideWrap {
+  position: relative;
 }
 
-.download .down_btn .btn_square span {
+.slideWrap .slideDown {
+  border-bottom: none;
+}
+
+.slideWrap .slideDown span#icon {
+  background: url("../img/customer_circle_arrow_down_white.png") no-repeat !important;
+  background-position: bottom;
   width: 21px;
   height: 23px;
-  background: url("/img/cs_icon_down.png") no-repeat;
   display: inline-block;
   margin-left: 10px;
 }
 
-.download .down_btn .setup_file .setup_btn .btn_square {
+.slideWrap .slideDown.active {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.slideWrap .slideSelect {
+  display: none;
+  width: 100%;
   background: #343434;
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+.slideWrap .slideSelect .slideBtn {
+  color: #fff;
+  padding: 15px 40px;
+}
+
+.slideWrap .slideSelect .slideBtn span#icon {
+  background: url("../img/cs_icon_down.png") no-repeat;
+  background-position: bottom;
+  width: 21px;
+  height: 23px;
+  display: inline-block;
   margin-left: 10px;
-  color: #fff;
-}
-
-.download .down_btn .setup_file .setup_btn .btn_square:hover {
-  background: #414141;
-}
-
-.download .down_btn .setup_file p {
-  margin-top: 20px;
-}
-
-.download .down_btn .delete_file .delete_btn .btn_square {
-  background: #ff8400;
-  color: #fff;
-}
-
-.download .down_btn .delete_file .delete_btn .btn_square:hover {
-  background: #ff9019;
-}
-
-.download .down_btn .delete_file p {
-  margin-top: 20px;
-}
-
-.download.active {
-  display: block;
 }
 
 .cs_faq {
   width: 1230px;
   margin: 0 auto 150px auto;
-  display: none;
 }
 
 .cs_faq h3 {
@@ -215,10 +187,6 @@
 .cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_content {
   padding: 50px;
   display: none;
-}
-
-.cs_faq.active {
-  display: block;
 }
 
 .section_feature {

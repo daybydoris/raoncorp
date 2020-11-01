@@ -1,0 +1,99 @@
+.download {
+  width: 100%;
+  background: #f8f8f8;
+  margin: 50px auto;
+  padding: 50px 0;
+}
+
+.download .down_top {
+  margin-bottom: 20px;
+}
+
+.download .down_top p {
+  font-size: 20px;
+  color: #414141;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.download .down_top .setup_ck {
+  color: #ff8400;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.download .down_btn {
+  min-width: 1160px;
+  height: 150px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .down_btn p {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.download .down_btn .btn_square {
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px 40px;
+  background: #343434;
+  color: #fff;
+}
+
+.download .down_btn .btn_square span#icon {
+  width: 21px;
+  height: 23px;
+  background: url("../img/cs_icon_down.png") no-repeat;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.download .down_btn .btn_square:hover {
+  background: #414141;
+}
+
+.download .down_btn .slideDown span#icon {
+  background: url("../img/customer_circle_arrow_down_white.png") no-repeat;
+  background-position: bottom;
+  width: 21px;
+  height: 23px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.download .down_btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .down_btn .setup_file:nth-of-type(2),
+.download .down_btn .setup_file:nth-of-type(3) {
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.download .down_btn .browser {
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=keybiz.css.map */

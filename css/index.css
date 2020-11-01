@@ -143,6 +143,9 @@
   border-radius: 10px;
   border: 1px solid #eff3f7;
 }
+.section_cs .cs_list li .list_title {
+  color: #000;
+}
 .section_cs .cs_list li .list_title:before {
   content: "";
   display: block;
@@ -272,6 +275,3 @@
 
   margin: 10px 0 0 0;
 }
-
-
-

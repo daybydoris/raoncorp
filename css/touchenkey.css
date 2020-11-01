@@ -1,0 +1,81 @@
+.download {
+  width: 100%;
+  background: #f8f8f8;
+  margin: 50px auto;
+  padding: 50px 0;
+}
+
+.download .down_top {
+  margin-bottom: 20px;
+}
+
+.download .down_top p {
+  font-size: 20px;
+  color: #414141;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.download .down_top .setup_ck {
+  color: #ff8400;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.download .down_btn {
+  width: 700px;
+  height: 150px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .down_btn .btn_square {
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.download .down_btn .btn_square span {
+  width: 21px;
+  height: 23px;
+  background: url("../img/cs_icon_down.png") no-repeat;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.download .down_btn p {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.download .down_btn .setup_file .setup_btn .btn_square {
+  background: #343434;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.download .down_btn .setup_file .setup_btn .btn_square:hover {
+  background: #414141;
+}
+
+.download .down_btn .delete_file .delete_btn .btn_square {
+  background: #ff8400;
+  color: #fff;
+}
+
+.download .down_btn .delete_file .delete_btn .btn_square:hover {
+  background: #ff9019;
+}
+
+.download .down_btn .delete_file p {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=touchenkey.css.map */

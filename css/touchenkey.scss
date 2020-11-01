@@ -1,0 +1,76 @@
+.download {
+  width: 100%;
+  background: #f8f8f8;
+  margin: 50px auto;
+  padding: 50px 0;
+
+  .down_top {
+    margin-bottom: 20px;
+    p {
+      font-size: 20px;
+      color: #414141;
+      font-weight: normal;
+      display: inline-block;
+    }
+    .setup_ck {
+      color: #ff8400;
+      font-size: 18px;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
+  .down_btn {
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .btn_square {
+      display: inline-block;
+      font-size: 18px;
+      padding: 20px 40px;
+
+      span {
+        width: 21px;
+        height: 23px;
+        background: url("../img/cs_icon_down.png") no-repeat;
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    p {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .setup_file {
+      .setup_btn {
+        .btn_square {
+          background: #343434;
+          margin-left: 10px;
+          color: #fff;
+        }
+        .btn_square:hover {
+          background: #414141;
+        }
+      }
+    }
+    .delete_file {
+      .delete_btn {
+        .btn_square {
+          background: #ff8400;
+          color: #fff;
+        }
+        .btn_square:hover {
+          background: #ff9019;
+        }
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+}
