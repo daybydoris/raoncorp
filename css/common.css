@@ -17,6 +17,7 @@
 * {
   box-sizing: border-box;
   font-family: Poppins, "NanumSquare";
+  outline: none;
 }
 
 /* ----------- header ---------- */
@@ -127,12 +128,28 @@ header {
 /*--------- .h_container dark ----------*/
 
 .h_container.dark {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   border: none;
 }
 
-.h_container.dark nav .menu_list .item .menu_sub_list li .menu_sub_section > a {
+.h_container.dark nav .menu_list .item > a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #eee;
+}
+
+.h_container.dark .menu_sub_list {
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.h_container.dark .menu_sub_list h3{
   color: rgba(255, 255, 255, 0.6);
+}
+
+.menu_sub_list.dark {
+  background: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /*--------- .h_container white ----------*/
@@ -148,11 +165,13 @@ header {
 .h_container.white nav .menu_list .item .menu_sub_list {
   background: #fff;
 }
-.h_container.white .menu_sub_section h3 {
-  color: #000;
+.h_container.white .menu_sub_list h3 {
+  color:rgba(0, 0, 0, 0.6);
 }
-.h_container.white nav .menu_list .item .menu_sub_list li .menu_sub_section > a {
-  color: rgba(0, 0, 0, 0.6);
+.h_container.white nav .menu_list .item > a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
 }
 
 /* ----- h_container default ----- */
@@ -163,9 +182,11 @@ header {
 .h_container.default nav .menu_list .item > a {
   color: #fff;
 }
-.h_container.default .menu_sub_section h3 {
+.h_container.default .menu_sub_list h3 {
   color: rgba(255, 255, 255, 0.8);
 }
+
+
 
 /*nav*/
 .h_container nav {
@@ -193,16 +214,8 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-.h_container.dark nav .menu_list .item > a:hover {
-  font-weight: bold;
-  text-decoration: underline;
-  color: #1e1e1e;
-}
-.h_container.white nav .menu_list .item > a:hover {
-  font-weight: bold;
-  text-decoration: underline;
-  color: #000;
-}
+
+
 
 /*submenu*/
 .menu_list .item .menu_sub_list {
@@ -226,15 +239,7 @@ header {
   display: flex;
 }
 
-.h_container.dark nav .menu_list .item .menu_sub_list {
-  background: rgba(0, 0, 0, 0.4);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
 
-.menu_sub_list.dark {
-  background: rgba(0, 0, 0, 0.4);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
 .menu_sub_list .sub_wrap {
   width: 100%;
   display: flex;
@@ -246,31 +251,23 @@ header {
   height: 100%;
 
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   margin: 0 60px 0 0;
 }
 
 .menu_sub_section {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: space-around;
+  align-items: center;
 
   height: 100%;
 }
 
-.menu_sub_section h3 {
-  margin: 0 0 20px 0;
-}
-
-.menu_sub_section h3 {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .menu_sub_section a {
-  margin: 0 0 20px 0;
+  margin: 20px 40px 20px 0;
 }
 
 /*lang & search*/
@@ -522,6 +519,7 @@ a {
 .btn_more:hover {
   background: #ff8400;
 }
+
 /* font */
 
 main .title {
