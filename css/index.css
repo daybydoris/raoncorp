@@ -143,9 +143,6 @@
   border-radius: 10px;
   border: 1px solid #eff3f7;
 }
-.section_cs .cs_list li .list_title {
-  color: #000;
-}
 .section_cs .cs_list li .list_title:before {
   content: "";
   display: block;
@@ -167,6 +164,10 @@
 
 .section_cs .cs_list li .list_title {
   letter-spacing: 0.3px;
+  color:#000;
+}
+.section_cs .cs_list li .text{
+  margin-top: 12px;
 }
 
 /*------------------ banner ----------------*/
@@ -204,17 +205,17 @@
 
   padding: 150px 20px;
 }
-.section_news .txt_area p {
+.txt_area p {
   margin-top: 14px;
 }
 
-.section_news .news_list {
+.news_list {
   display: flex;
   text-align: center;
 
   margin: 80px auto 0;
 }
-.section_news .news_list li {
+.news_list li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -228,14 +229,12 @@
   border: 1px solid #eee;
   border-radius: 10px;
 }
-.section_news .news_list .news_item_01 {
+.news_list li:nth-of-type(1),
+.news_list li:nth-of-type(2) {
   margin-right: 40px;
 }
-.section_news .news_list .news_item_02 {
-  margin-right: 40px;
-}
-
-.section_news .news_list li .news_link {
+.news_list li .news_link {
+  width: 100%;
   height: 100%;
   overflow: hidden;
 
@@ -244,31 +243,31 @@
   justify-content: space-between;
   align-items: center;
 }
-.section_news .news_list li .news_link .img_box {
+.news_list li .news_link .img_box {
+  width: 100%;
   height: 50%;
   overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
-.section_news .news_list li .news_link .img_box img {
-  width: 100%;
+.news_list li .news_link .img_box img {
   height: 100%;
 }
 
-.section_news .news_list li .txt_box {
+.news_list li .txt_box {
+  width: 100%;
   height: 50%;
   padding: 30px;
 }
-.section_news .news_list li .txt_box .list_title {
+.news_list li .txt_box .list_title {
   color: #1e1e1e;
   font-size: 19px;
   text-align: left;
   display: block;
 }
-.section_news .news_list li .txt_box .text {
+.news_list li .txt_box .text {
   display: block;
   color: #4a4a4a;
   text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   height: 60px;
   /*    white-space: nowrap;*/
