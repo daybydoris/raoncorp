@@ -90,8 +90,11 @@
 }
 
 .slideWrap .slideSelect {
-  display: none;
   width: 100%;
+  height: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
   background: #343434;
   position: absolute;
   border-radius: 0 0 5px 5px;
@@ -102,6 +105,8 @@
 .slideWrap .slideSelect .slideBtn {
   color: #fff;
   padding: 15px 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .slideWrap .slideSelect .slideBtn span#icon {
@@ -111,6 +116,14 @@
   height: 23px;
   display: inline-block;
   margin-left: 10px;
+}
+
+.slideWrap .slideSelect .slideBtn:hover {
+  background: #414141;
+}
+
+.slideWrap .slideSelect.active {
+  height: 110px;
 }
 
 .cs_faq {
@@ -185,8 +198,18 @@
 }
 
 .cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_content {
+  opacity: 0;
+  height: 0;
+  padding: 0 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.cs_faq .faq_list_wrap .faq_list .faq_list_item .faq_content.active {
+  opacity: 1;
+  height: auto;
   padding: 50px;
-  display: none;
 }
 
 .section_feature {

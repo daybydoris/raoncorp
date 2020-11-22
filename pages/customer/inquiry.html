@@ -88,7 +88,7 @@
                   <input
                     type="checkbox"
                     id="privacyTxt_ck"
-                    name="privacyTxt_ck"
+                    name="privacyTxt_ck" required
                   />
                   <label for="privacyTxt_ck"
                     >개인정보 수집 및 이용에 대해 동의합니다.</label
@@ -218,19 +218,14 @@
                           <span>*</span>
                         </th>
                         <td>
-                          <textarea
-                            name="data[content]"
-                            id="data_content"
-                            cols="30"
-                            rows="10"
-                            required>
-                          </textarea>
+                          <textarea name="data[content]" id="data_content" cols="30" rows="10"></textarea>
                         </td>
                       </tr>
                     </tbody>
                   </table>
+                  <input type="submit" class="btn_square orng" value="문의 신청하기">
                 </form>
-                <a href="#" class="btn_square orng submit">문의 신청하기</a>
+
               </div>
             </div>
           </div>

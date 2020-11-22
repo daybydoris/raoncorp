@@ -79,8 +79,10 @@
     border-radius: 5px 5px 0px 0px;
   }
   .slideSelect {
-    display: none;
     width: 100%;
+    height: 0;
+    transition: all 0.5s;
+    overflow: hidden;
 
     background: #343434;
 
@@ -91,8 +93,8 @@
     border-top: none;
     .slideBtn {
       color: #fff;
-
       padding: 15px 40px;
+      transition: 0.3s;
 
       span#icon {
         background: url("../img/cs_icon_down.png") no-repeat;
@@ -103,84 +105,14 @@
         margin-left: 10px;
       }
     }
+    .slideBtn:hover {
+      background: #414141;
+    }
+  }
+  .slideSelect.active {
+    height: 110px;
   }
 }
-
-// .download {
-//   width: 100%;
-//   background: #f8f8f8;
-//   margin: 50px auto;
-//   padding: 50px 0;
-
-//   .down_top {
-//     margin-bottom: 20px;
-//     p {
-//       font-size: 20px;
-//       color: #414141;
-//       font-weight: normal;
-//       display: inline-block;
-//     }
-//     .setup_ck {
-//       color: #ff8400;
-//       font-size: 18px;
-//       text-decoration: underline;
-//       text-underline-position: under;
-//     }
-//   }
-
-//   .down_btn {
-//     width: 700px;
-//     height: 150px;
-//     margin: 0 auto;
-
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-
-//     .btn_square {
-//       display: inline-block;
-//       font-size: 18px;
-//       padding: 20px 40px;
-
-//       span {
-//         width: 21px;
-//         height: 23px;
-//         background: url("../img/cs_icon_down.png") no-repeat;
-//         display: inline-block;
-//         margin-left: 10px;
-//       }
-//     }
-//     .setup_file {
-//       .setup_btn {
-//         .btn_square {
-//           background: #343434;
-//           margin-left: 10px;
-//           color: #fff;
-//         }
-//         .btn_square:hover {
-//           background: #414141;
-//         }
-//       }
-//       p {
-//         margin-top: 20px;
-//       }
-//     }
-//     .delete_file {
-//       .delete_btn {
-//         .btn_square {
-//           background: #ff8400;
-//           color: #fff;
-//         }
-//         .btn_square:hover {
-//           background: #ff9019;
-//         }
-//       }
-//       p {
-//         margin-top: 20px;
-//       }
-//     }
-//   }
-// }
 
 .cs_faq {
   width: 1230px;
@@ -234,8 +166,16 @@
           }
         }
         .faq_content {
+          opacity: 0;
+          height: 0;
+          padding: 0 50px;
+          transition: 0.5s;
+          overflow: hidden;
+        }
+        .faq_content.active {
+          opacity: 1;
+          height: auto;
           padding: 50px;
-          display: none;
         }
       }
     }
