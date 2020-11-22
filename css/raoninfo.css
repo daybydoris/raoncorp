@@ -222,13 +222,15 @@ main #shape04 {
   margin: 0 auto;
 }
 
-.m_container .contents_wrap .contents article#vision .mission th {
+.m_container .contents_wrap .contents article#vision .mission th,
+.m_container .contents_wrap .contents article#vision .mission td {
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
-.m_container .contents_wrap .contents article#vision .mission td {
-  padding: 10px;
+.m_container .contents_wrap .contents article#vision .mission th:nth-of-type(2),
+.m_container .contents_wrap .contents article#vision .mission td:nth-of-type(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .m_container .contents_wrap .contents article#map .img_box {
