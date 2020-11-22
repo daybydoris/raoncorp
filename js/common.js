@@ -1,9 +1,6 @@
 $(function () {
   //start
 
-  //    console.log(location.pathname);
-  //    console.log(location.host);
-
   $("header").load("/raoncorp/inc_head_foot.html header .h_container", headColor);
   $("footer").load("/raoncorp/inc_head_foot.html footer .f_container", scrollTop);
 
@@ -49,15 +46,4 @@ $(function () {
     }
   });
 
-
-  //  function menuTrigger(){
-  //      // menu-trigger active 클래스 추가
-  //      var menu = document.querySelector('.menu-trigger');
-  //      var nav = document.querySelector('nav');
-
-  //      menu.addEventListener('click',function(){
-  //          menu.classList.toggle('active');
-  //          nav.classList.toggle('active');
-  //      });
-  //  }
 });
