@@ -1,10 +1,10 @@
 'use strict';
 
-window.addEventListener('DOMContentLoaded',function(){
+window.addEventListener('DOMContentLoaded', function () {
     //start
 
     console.log(location.pathname);
-    
+
 
     const requestURL = "../news.json";
     const request = new XMLHttpRequest();
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded',function(){
     request.responseType = "json";
     request.send();
 
-    request.onload = function(){
+    request.onload = function () {
         console.log('성공');
 
         const newsData = request.response;
@@ -23,42 +23,42 @@ window.addEventListener('DOMContentLoaded',function(){
         createNews(newsData);
 
 
-        function createNews(jsonObj){
-            jsonObj.news.forEach(function(el, key){
-                
+        function createNews(jsonObj) {
+            jsonObj.news.sort(date_sort).forEach(function (el, key) {
+
                 let text = el.text,
-                title = el.tit,
-                imgUrl = el.imgUrl;
+                    title = el.tit,
+                    imgUrl = el.imgUrl;
 
                 const date = el.date;
-                
+
                 //imgUrl 경로 수정하기
                 imgUrl = imgUrl.replace(imgUrl, "../" + imgUrl);
 
                 //미리보기 태그 제거하기
-                text = text.replace(/(<([^>]+)>)/ig,"");
+                text = text.replace(/(<([^>]+)>)/ig, "");
 
                 //제목 글자 수 제한
-                if(title.length > 35 ){
+                if (title.length > 35) {
                     title = title.substr(0, 35);
                     title = title.replace(title, title + "...");
                 }
 
                 //미리보기 글자 수 제한
-                if(text.length > 60 ){
+                if (text.length > 60) {
                     text = text.substr(0, 63);
                     text = text.replace(text, text + "...");
                 }
 
 
-                
+
                 const newsItem = document.createElement('li'),
-                newsLink = document.createElement('a'),
-                imgBox = document.createElement('div'),
-                imgEle = document.createElement('img'),
-                txtBox = document.createElement('div'),
-                listTit = document.createElement('h3'),
-                txtCon = document.createElement('p');
+                    newsLink = document.createElement('a'),
+                    imgBox = document.createElement('div'),
+                    imgEle = document.createElement('img'),
+                    txtBox = document.createElement('div'),
+                    listTit = document.createElement('h3'),
+                    txtCon = document.createElement('p');
 
                 txtCon.innerHTML = text;
                 txtCon.classList.add('text');
@@ -76,26 +76,43 @@ window.addEventListener('DOMContentLoaded',function(){
 
                 newsLink.appendChild(imgBox);
                 newsLink.appendChild(txtBox);
-                newsLink.setAttribute('href','#');
+                newsLink.setAttribute('href', '#');
                 newsLink.classList.add('news_link');
 
                 newsItem.appendChild(newsLink);
-                newsItem.classList.add("news_item_" + key);
+                newsItem.id = "news_item_" + key;
 
                 newsList.appendChild(newsItem);
 
+                newsItem.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const articleNum = key;
+                    localStorage.setItem('num', articleNum);
+
+                    location.href = "news_detail.html";
+                });
 
             });
 
-            
+
+            //게시글 최신 날짜순 정렬
+            function date_sort(a, b) {
+                var dateA = new Date(a['date']).getTime();
+                var dateB = new Date(b['date']).getTime();
+                return dateA < dateB ? 1 : -1;
+            }
+
+
+
+
         }
 
-        
+
 
     }
 
 
-    
+
 
     //end
 });
