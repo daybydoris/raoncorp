@@ -230,10 +230,16 @@
   height: 50%;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  position: relative;
 }
 
 .news_link .img_box img {
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .txt_box {
