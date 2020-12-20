@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function () {
         createNews(newsData);
 
         function createNews(jsonObj) {
-            jsonObj.news.forEach(function (el, key) {
+            jsonObj.news.sort(date_sort).forEach(function (el, key) {
 
                 //3개까지만 출력
                 if (key < 3) {
@@ -75,16 +75,29 @@ window.addEventListener('DOMContentLoaded', function () {
                     newsLink.classList.add('news_link');
 
                     newsItem.appendChild(newsLink);
-                    newsItem.classList.add("news_item_" + key);
+                    newsItem.id = "news_item_" + key;
 
                     newsList.appendChild(newsItem);
 
+                    newsItem.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const articleNum = key;
+                        localStorage.setItem('num', articleNum);
+
+                        location.href = "pages/news_detail.html";
+                    });
                 }
             });
 
 
         }
 
+        //게시글 최신 날짜순 정렬
+        function date_sort(a, b) {
+            var dateA = new Date(a['date']).getTime();
+            var dateB = new Date(b['date']).getTime();
+            return dateA < dateB ? 1 : -1;
+        }
 
 
     }
