@@ -248,9 +248,13 @@
   height: 50%;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  position:relative;
 }
 .news_list li .news_link .img_box img {
   height: 100%;
+  position: absolute;
+  top:0; left:50%;
+  transform: translateX(-50%);
 }
 
 .news_list li .txt_box {
@@ -273,4 +277,12 @@
   /*    white-space: nowrap;*/
 
   margin: 10px 0 0 0;
+}
+.section_news .btn_more{
+  color:#4a4a4a;
+  border:1px solid rgba(0,0,0,0.3);
+}
+.section_news .btn_more:hover{
+  color:#fff;
+  border:1px solid #ff8400;
 }
