@@ -10,39 +10,39 @@ $(function () {
     if (filename == "/raoncorp/index.html" || filename == "/raoncorp/") {
       $(".h_container").addClass("dark");
       $(".contact").addClass("default");
-    }else if(filename == "/raoncorp/pages/raoninfo.html"){
-      
+    } else if (filename == "/raoncorp/pages/raoninfo.html") {
+
       $('.h_container').addClass('default');
       $(".contact").addClass("default");
-    }else {
+    } else {
       $(".h_container").addClass("white");
       $(".contact").addClass("white");
     }
   }
 
-  function scrollTop(){
-    setTimeout(function(){
-        var topButton = document.querySelector('.copyright a');
+  function scrollTop() {
+    setTimeout(function () {
+      var topButton = document.querySelector('.copyright a');
 
-        topButton.addEventListener("click", function (e) {
-            e.preventDefault();
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth"
-            });
-            $(".h_container").slideDown();
+      topButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
         });
-    },500);
-}
+        $(".h_container").slideDown();
+      });
+    }, 500);
+  }
 
   //header 스크롤 시 숨기기
   $(window).on("mousewheel", function (e) {
     var wheel = e.originalEvent.wheelDelta;
 
     if (wheel < 0) {
-      $(".h_container").slideUp();
+      $(".h_container").stop().slideUp();
     } else {
-      $(".h_container").slideDown();
+      $(".h_container").stop().slideDown();
     }
   });
 
