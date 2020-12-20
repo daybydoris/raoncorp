@@ -99,12 +99,15 @@
   }
   .btn_wrap{
     text-align:center;
-  }
     .btn_square {
       padding: 20px 50px;
       font-size: 20px;
       display: inline-block;
+      margin:0 auto;
+      cursor:pointer;
     }
+  }
+    
 
 }
 

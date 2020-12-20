@@ -103,10 +103,12 @@
   text-align: center;
 }
 
-.contactBoard .btn_square {
+.contactBoard .btn_wrap .btn_square {
   padding: 20px 50px;
   font-size: 20px;
   display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 #formBoard .boardWrite {
