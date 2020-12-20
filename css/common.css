@@ -18,6 +18,8 @@
   box-sizing: border-box;
   font-family: Poppins, "NanumSquare";
   outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 /* ----------- header ---------- */
